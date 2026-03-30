@@ -51,10 +51,12 @@
 
 <h1>AI Agent Framework Comparison 2026</h1>
 <p class="subtitle">Comprehensive analysis of 9 open-source AI agent frameworks for self-hosted deployment</p>
-<p class="date">Generated: March 30, 2026 | Alejandro Alvarez Project</p>
+<p class="date">March 2026 | By Alejandro Alvarez</p>
 
 <h2>Executive Summary</h2>
-<p>This document evaluates 9 open-source AI agent frameworks across 6 weighted dimensions: Security (30%), Code Quality (20%), Orchestration (20%), Ecosystem (15%), Popularity (10%), and Hardware Efficiency (5%). The composite score reflects overall suitability for production self-hosted deployment.</p>
+<p>The AI agent ecosystem exploded in early 2026, with OpenClaw reaching 430K GitHub stars in under 90 days and spawning dozens of alternatives. This study evaluates the 9 most significant open-source AI agent frameworks through a structured analysis of security audits, code reviews, community data, and architectural assessments from over 30 independent sources including Microsoft, Cisco, Kaspersky, NVIDIA, and academic research.</p>
+<p>Each agent is scored across 6 weighted dimensions: <strong>Security (30%)</strong>, <strong>Code Quality (20%)</strong>, <strong>Orchestration (20%)</strong>, <strong>Ecosystem (15%)</strong>, <strong>Popularity (10%)</strong>, and <strong>Hardware Efficiency (5%)</strong>. Security is weighted highest because these agents have system-level access, handle credentials, and execute arbitrary code. The study intentionally weights popularity low (10%) to avoid conflating adoption with quality &mdash; the most popular agent (OpenClaw, 430K stars) ranks 7th due to 9 CVEs and no built-in sandbox.</p>
+<p><strong>Key findings:</strong> Rust-based agents (IronClaw, Moltis) lead in security and code quality. OpenHands leads in orchestration API maturity. OpenClaw has the richest ecosystem but the worst security posture. PicoClaw is the most hardware-efficient (10MB RAM) but pre-v1.0. All scores, data points, and claims are traceable to the sources listed at the end of this document.</p>
 
 <h2>Comparison Table</h2>
 <table>
@@ -422,9 +424,12 @@
 </tbody>
 </table>
 
-<p>Security is weighted highest (30%) because agents handle sensitive data, credentials, and have system-level access. Popularity is weighted lowest (10%) because widespread adoption does not equal quality — OpenClaw is the most popular agent but has the worst security record.</p>
+<p><strong>Why these weights?</strong> Security receives the highest weight (30%) because AI agents have system-level access &mdash; they execute shell commands, read files, handle API keys, and interact with external services. A compromised agent is a compromised machine. Code Quality and Orchestration each receive 20% because they directly determine reliability and controllability. Ecosystem matters (15%) but is secondary to safety. Popularity is deliberately low (10%) to prevent conflating adoption with quality &mdash; OpenClaw demonstrates this clearly: 430K stars but 9 CVEs and no sandbox. Hardware efficiency is minimal (5%) because most deployments have adequate resources; it only matters for edge/IoT use cases.</p>
 
-<h2>Sources</h2>
+<p><strong>Limitations:</strong> This analysis reflects the state of these projects as of March 2026. Open-source projects evolve rapidly. Security scores may change as vulnerabilities are discovered or fixed. Orchestration and ecosystem scores are based on documented features, not exhaustive testing. Performance benchmarks (SWE-bench, PinchBench) measure the underlying LLM model more than the agent framework itself, which is why we excluded them from the scoring formula. All data is sourced from public information; no private audits were conducted.</p>
+
+<h2>Sources &amp; References</h2>
+<p style="font-size:8.5pt;color:#64748b;margin-bottom:12px;">All scores and claims in this document are traceable to the following sources. Links verified as of March 2026.</p>
 
 <h3>Security Audits & Research</h3>
 <ul class="source-list">
@@ -479,7 +484,7 @@
 </ul>
 
 <div class="footer">
-  AI Agent Framework Comparison 2026 | By Alejandro Alvarez | March 30, 2026
+  AI Agent Framework Comparison 2026 | By Alejandro Alvarez | March 2026
 </div>
 
 </body>

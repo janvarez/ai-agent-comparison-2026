@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AI Agent Framework Comparison 2026</title>
+<meta property="og:title" content="AI Agent Framework Comparison 2026">
+<meta property="og:description" content="Comprehensive analysis of 9 open-source AI agent frameworks — Security, Code Quality, Orchestration, Ecosystem scoring with 30+ verified sources">
+<meta property="og:image" content="https://janvarez.github.io/ai-agent-comparison-2026/slides/slide-1.png">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  @page { size: A4 landscape; margin: 1.5cm; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; color: #1e293b; font-size: 10pt; line-height: 1.5; }
+  h1 { font-size: 22pt; color: #312e81; margin-bottom: 4px; }
+  h2 { font-size: 15pt; color: #4338ca; margin-top: 24px; border-bottom: 2px solid #e2e8f0; padding-bottom: 4px; }
+  h3 { font-size: 12pt; color: #1e293b; margin-top: 16px; }
+  .subtitle { color: #64748b; font-size: 11pt; margin-bottom: 20px; }
+  .date { color: #94a3b8; font-size: 9pt; }
+  table { width: 100%; border-collapse: collapse; font-size: 8.5pt; margin: 12px 0; }
+  th { background: #f1f5f9; color: #475569; font-weight: 600; text-transform: uppercase; font-size: 7.5pt; letter-spacing: 0.5px; padding: 6px 8px; text-align: left; border: 1px solid #e2e8f0; }
+  td { padding: 6px 8px; border: 1px solid #e2e8f0; vertical-align: top; }
+  tr:nth-child(even) { background: #f8fafc; }
+  .score { display: inline-block; padding: 2px 8px; border-radius: 4px; font-weight: 700; font-size: 9pt; }
+  .score-high { background: #dcfce7; color: #166534; }
+  .score-mid { background: #dbeafe; color: #1e40af; }
+  .score-low { background: #fef3c7; color: #92400e; }
+  .score-poor { background: #fee2e2; color: #991b1b; }
+  .badge { display: inline-block; padding: 1px 6px; border-radius: 10px; font-size: 7.5pt; font-weight: 600; }
+  .badge-green { background: #dcfce7; color: #166534; }
+  .badge-blue { background: #dbeafe; color: #1e40af; }
+  .badge-amber { background: #fef3c7; color: #92400e; }
+  .badge-red { background: #fee2e2; color: #991b1b; }
+  .pro { color: #166534; font-size: 8pt; }
+  .con { color: #991b1b; font-size: 8pt; }
+  .mono { font-family: 'SF Mono', 'Fira Code', monospace; font-size: 8pt; }
+  .dim-label { font-size: 8pt; color: #64748b; }
+  .agent-card { border: 1px solid #e2e8f0; border-radius: 8px; padding: 12px 16px; margin: 10px 0; page-break-inside: avoid; }
+  .agent-card h3 { margin-top: 0; color: #312e81; }
+  .agent-meta { display: flex; gap: 16px; flex-wrap: wrap; font-size: 8.5pt; color: #64748b; margin-bottom: 8px; }
+  .agent-meta span { white-space: nowrap; }
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; font-size: 8.5pt; }
+  .source-list { font-size: 8pt; color: #475569; }
+  .source-list a { color: #4338ca; text-decoration: none; }
+  .methodology-table th { font-size: 8pt; }
+  .methodology-table td { font-size: 8.5pt; }
+  .page-break { page-break-before: always; }
+  .footer { margin-top: 30px; padding-top: 10px; border-top: 1px solid #e2e8f0; font-size: 8pt; color: #94a3b8; text-align: center; }
+</style>
+</head>
+<body>
+
+<h1>AI Agent Framework Comparison 2026</h1>
+<p class="subtitle">Comprehensive analysis of 9 open-source AI agent frameworks for self-hosted deployment</p>
+<p class="date">Generated: March 30, 2026 | Alejandro Alvarez Project</p>
+
+<h2>Executive Summary</h2>
+<p>This document evaluates 9 open-source AI agent frameworks across 6 weighted dimensions: Security (30%), Code Quality (20%), Orchestration (20%), Ecosystem (15%), Popularity (10%), and Hardware Efficiency (5%). The composite score reflects overall suitability for production self-hosted deployment.</p>
+
+<h2>Comparison Table</h2>
+<table>
+<thead>
+<tr>
+  <th>Score</th>
+  <th>Agent</th>
+  <th>Language</th>
+  <th>Stars</th>
+  <th>License</th>
+  <th>Security</th>
+  <th>Code Quality</th>
+  <th>Orchestration</th>
+  <th>Ecosystem</th>
+  <th>Popularity</th>
+  <th>Hardware</th>
+  <th>Min HW</th>
+  <th>Docker Image</th>
+  <th>Port</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><span class="score score-high">7.5</span></td>
+  <td><strong>IronClaw</strong></td>
+  <td>Rust</td>
+  <td>4.8K+</td>
+  <td>Apache 2.0</td>
+  <td><span class="badge badge-green">9/10 Very High</span></td>
+  <td><span class="badge badge-green">9/10 Excellent</span></td>
+  <td><span class="badge badge-blue">7/10 Good</span></td>
+  <td><span class="badge badge-blue">6/10</span></td>
+  <td><span class="badge badge-amber">4/10 Growing</span></td>
+  <td><span class="badge badge-blue">6/10 Light</span></td>
+  <td class="mono">2C/4T, 2GB, 500MB</td>
+  <td class="mono">nearai/ironclaw</td>
+  <td class="mono">18789</td>
+</tr>
+<tr>
+  <td><span class="score score-high">7.3</span></td>
+  <td><strong>OpenHands</strong></td>
+  <td>Python</td>
+  <td>65K+</td>
+  <td>MIT</td>
+  <td><span class="badge badge-blue">7/10 High</span></td>
+  <td><span class="badge badge-blue">7/10 Good</span></td>
+  <td><span class="badge badge-green">8/10 Excellent</span></td>
+  <td><span class="badge badge-green">8/10</span></td>
+  <td><span class="badge badge-green">8/10 Very High</span></td>
+  <td><span class="badge badge-amber">3/10 Heavy</span></td>
+  <td class="mono">4C/8T, 8GB, 10GB</td>
+  <td class="mono">ghcr.io/openhands/openhands</td>
+  <td class="mono">3000</td>
+</tr>
+<tr>
+  <td><span class="score score-mid">6.9</span></td>
+  <td><strong>Moltis</strong></td>
+  <td>Rust</td>
+  <td>2.3K+</td>
+  <td>MIT</td>
+  <td><span class="badge badge-blue">7/10 High</span></td>
+  <td><span class="badge badge-green">9/10 Excellent</span></td>
+  <td><span class="badge badge-blue">6/10 Fair</span></td>
+  <td><span class="badge badge-blue">7/10</span></td>
+  <td><span class="badge badge-amber">3/10 Emerging</span></td>
+  <td><span class="badge badge-green">8/10 Very Light</span></td>
+  <td class="mono">1C/2T, 512MB, 100MB</td>
+  <td class="mono">moltis/moltis</td>
+  <td class="mono">8080</td>
+</tr>
+<tr>
+  <td><span class="score score-mid">6.3</span></td>
+  <td><strong>NanoClaw</strong></td>
+  <td>Node.js</td>
+  <td>21.5K+</td>
+  <td>MIT</td>
+  <td><span class="badge badge-blue">7/10 High</span></td>
+  <td><span class="badge badge-blue">6/10 Fair</span></td>
+  <td><span class="badge badge-blue">7/10 Good</span></td>
+  <td><span class="badge badge-blue">5/10</span></td>
+  <td><span class="badge badge-blue">6/10 Notable</span></td>
+  <td><span class="badge badge-blue">5/10 Moderate</span></td>
+  <td class="mono">2C/4T, 4GB, 5GB</td>
+  <td class="mono">qwibitai/nanoclaw</td>
+  <td class="mono">Varies</td>
+</tr>
+<tr>
+  <td><span class="score score-mid">6.2</span></td>
+  <td><strong>NemoClaw</strong></td>
+  <td>Node.js</td>
+  <td>4.6K+</td>
+  <td>NVIDIA</td>
+  <td><span class="badge badge-green">9/10 Very High</span></td>
+  <td><span class="badge badge-amber">5/10 Fair</span></td>
+  <td><span class="badge badge-blue">6/10 Fair</span></td>
+  <td><span class="badge badge-blue">5/10</span></td>
+  <td><span class="badge badge-amber">4/10 Growing</span></td>
+  <td><span class="badge badge-amber">3/10 Heavy</span></td>
+  <td class="mono">4C/4T, 8GB, 5GB</td>
+  <td class="mono">nvidia/nemoclaw</td>
+  <td class="mono">18789</td>
+</tr>
+<tr>
+  <td><span class="score score-mid">6.1</span></td>
+  <td><strong>Goose</strong></td>
+  <td>Rust + Python</td>
+  <td>29K+</td>
+  <td>Apache 2.0</td>
+  <td><span class="badge badge-amber">5/10 Medium</span></td>
+  <td><span class="badge badge-blue">7/10 Good</span></td>
+  <td><span class="badge badge-amber">5/10 Fair</span></td>
+  <td><span class="badge badge-green">9/10</span></td>
+  <td><span class="badge badge-blue">7/10 High</span></td>
+  <td><span class="badge badge-amber">3/10 Heavy</span></td>
+  <td class="mono">4C/8T, 8GB, 2GB</td>
+  <td class="mono">block/goose</td>
+  <td class="mono">3000</td>
+</tr>
+<tr>
+  <td><span class="score score-mid">6.0</span></td>
+  <td><strong>OpenClaw</strong></td>
+  <td>Node.js</td>
+  <td>430K+</td>
+  <td>MIT</td>
+  <td><span class="badge badge-red">2/10 Low</span></td>
+  <td><span class="badge badge-amber">4/10 Poor</span></td>
+  <td><span class="badge badge-green">9/10 Excellent</span></td>
+  <td><span class="badge badge-green">10/10</span></td>
+  <td><span class="badge badge-green">10/10 Dominant</span></td>
+  <td><span class="badge badge-blue">5/10 Moderate</span></td>
+  <td class="mono">2C/4T, 4GB, 2GB</td>
+  <td class="mono">alpine/openclaw</td>
+  <td class="mono">18789</td>
+</tr>
+<tr>
+  <td><span class="score score-low">5.7</span></td>
+  <td><strong>PicoClaw</strong></td>
+  <td>Go</td>
+  <td>25K+</td>
+  <td>MIT</td>
+  <td><span class="badge badge-amber">5/10 Medium</span></td>
+  <td><span class="badge badge-blue">6/10 Fair</span></td>
+  <td><span class="badge badge-amber">5/10 Fair</span></td>
+  <td><span class="badge badge-blue">5/10</span></td>
+  <td><span class="badge badge-blue">7/10 High</span></td>
+  <td><span class="badge badge-green">10/10 Minimal</span></td>
+  <td class="mono">1C/1T, 10MB, 50MB</td>
+  <td class="mono">sipeed/picoclaw</td>
+  <td class="mono">18789</td>
+</tr>
+<tr>
+  <td><span class="score score-low">5.4</span></td>
+  <td><strong>NanoBot</strong></td>
+  <td>Python</td>
+  <td>26.8K+</td>
+  <td>Open Source</td>
+  <td><span class="badge badge-amber">5/10 Medium</span></td>
+  <td><span class="badge badge-amber">5/10 Fair</span></td>
+  <td><span class="badge badge-blue">6/10 Fair</span></td>
+  <td><span class="badge badge-amber">4/10</span></td>
+  <td><span class="badge badge-blue">7/10 High</span></td>
+  <td><span class="badge badge-green">8/10 Very Light</span></td>
+  <td class="mono">1C/2T, 512MB, 200MB</td>
+  <td class="mono">hkuds/nanobot</td>
+  <td class="mono">18790</td>
+</tr>
+</tbody>
+</table>
+
+<h2 class="page-break">Agent Profiles</h2>
+
+<div class="agent-card">
+  <h3>IronClaw <span class="score score-high" style="margin-left:8px">7.5/10</span></h3>
+  <div class="agent-meta">
+    <span><strong>Language:</strong> Rust</span>
+    <span><strong>Stars:</strong> 4.8K+</span>
+    <span><strong>License:</strong> Apache 2.0</span>
+    <span><strong>Repo:</strong> github.com/nearai/ironclaw</span>
+  </div>
+  <p>OpenClaw-inspired rewrite in Rust by Illia Polosukhin, co-author of the Transformer paper ("Attention Is All You Need") / NEAR AI. All untrusted tools run in WebAssembly sandboxes with capability-based permissions. Gateway API compatible with OpenClaw. Zero outbound API calls possible — fully air-gapped operation.</p>
+  <div class="grid-2">
+    <div><strong>Security:</strong> Wasm isolation (seL4-inspired). Zero-default access. Endpoint allowlisting, credential injection, leak detection. FIPS certification path.</div>
+    <div><strong>Code Quality:</strong> Pure Rust, zero unsafe code. Wasm formal verification. Capability-based security model throughout.</div>
+    <div><strong>Orchestration:</strong> OpenClaw-compatible Gateway API, session management, MCP tools, capability-based task control.</div>
+    <div><strong>Ecosystem:</strong> OpenClaw-compatible: MCP, multi-provider (Anthropic, OpenAI, Gemini, Mistral, Ollama), Wasm plugins, REST API.</div>
+  </div>
+  <p class="pro"><strong>Pro:</strong> Best security (Wasm sandbox, zero-trust), air-gap capable, Rust memory safety</p>
+  <p class="con"><strong>Con:</strong> ~5% of OpenClaw skill library, 15ms overhead per skill, higher install friction</p>
+  <p class="dim-label"><strong>Min Hardware:</strong> 2 CPU cores, 4 threads, 2 GB RAM, 500 MB storage</p>
+</div>
+
+<div class="agent-card">
+  <h3>OpenHands <span class="score score-high" style="margin-left:8px">7.3/10</span></h3>
+  <div class="agent-meta">
+    <span><strong>Language:</strong> Python</span>
+    <span><strong>Stars:</strong> 65K+</span>
+    <span><strong>License:</strong> MIT</span>
+    <span><strong>Repo:</strong> github.com/OpenHands/OpenHands</span>
+  </div>
+  <p>AI-driven software development platform. Best-in-class REST API + WebSocket server. Docker-native with event-sourced state model. Raised $18.8M. Supports defining agents in code, running locally or scaling to 1000s in the cloud. Enterprise-ready with VPC deployment.</p>
+  <div class="grid-2">
+    <div><strong>Security:</strong> Docker container isolation. Event-sourced state for audit/replay. Fine-grained access control.</div>
+    <div><strong>Code Quality:</strong> Event-sourced, deterministic replay, SWE-bench tested. Python (no memory safety guarantees).</div>
+    <div><strong>Orchestration:</strong> Full REST+WS API, Agent SDK for composing agents, multi-agent support, CI/CD integration, health endpoints, task abort.</div>
+    <div><strong>Ecosystem:</strong> Enterprise: REST+WS API, Agent SDK, MCP, Docker runtime, event sourcing, K8s deploy.</div>
+  </div>
+  <p class="pro"><strong>Pro:</strong> Best REST API, Docker isolation, $18.8M funded, 87% bug tickets solved same day</p>
+  <p class="con"><strong>Con:</strong> Resource-heavy (8GB+ RAM), looping on ambiguous tasks, high LLM API costs</p>
+  <p class="dim-label"><strong>Min Hardware:</strong> 4 CPU cores, 8 threads, 8 GB RAM, 10 GB storage</p>
+</div>
+
+<div class="agent-card">
+  <h3>Moltis <span class="score score-mid" style="margin-left:8px">6.9/10</span></h3>
+  <div class="agent-meta">
+    <span><strong>Language:</strong> Rust</span>
+    <span><strong>Stars:</strong> 2.3K+</span>
+    <span><strong>License:</strong> MIT</span>
+    <span><strong>Repo:</strong> github.com/moltis-org/moltis</span>
+  </div>
+  <p>Single Rust binary — no Node.js, no npm, no runtime dependencies. Runs on Mac Mini, Raspberry Pi, or any server. Built-in voice, memory, scheduling, Telegram, Discord, browser automation, MCP servers. Streaming-first responses. Keys never leave your machine.</p>
+  <div class="grid-2">
+    <div><strong>Security:</strong> Container sandbox. No telemetry, no phone-home. Full audit trail. Keys never leave machine.</div>
+    <div><strong>Code Quality:</strong> 150K lines Rust, zero unsafe workspace-wide, 2,300+ tests, Prometheus/OTel, auditable agent loop (~5K lines).</div>
+    <div><strong>Orchestration:</strong> JSON-RPC API, built-in sessions, memory system for context, cron scheduling, MCP tools, health endpoint.</div>
+    <div><strong>Ecosystem:</strong> Built-in: MCP, voice, memory, scheduling, Telegram, Discord, browser, 8 TTS/7 STT providers.</div>
+  </div>
+  <p class="pro"><strong>Pro:</strong> Single binary, no runtime deps, voice+memory+MCP built-in, runs on Raspberry Pi</p>
+  <p class="con"><strong>Con:</strong> Small community (2.3K stars), limited channel support, integration/tuning overhead</p>
+  <p class="dim-label"><strong>Min Hardware:</strong> 1 CPU core, 2 threads, 512 MB RAM, 100 MB storage</p>
+</div>
+
+<div class="agent-card">
+  <h3>NanoClaw <span class="score score-mid" style="margin-left:8px">6.3/10</span></h3>
+  <div class="agent-meta">
+    <span><strong>Language:</strong> Node.js (TypeScript)</span>
+    <span><strong>Stars:</strong> 21.5K+</span>
+    <span><strong>License:</strong> MIT</span>
+    <span><strong>Repo:</strong> github.com/qwibitai/nanoclaw</span>
+  </div>
+  <p>Container-first agent built on Claude Agent SDK by Qwibit AI. Every agent session runs in an isolated Docker container. Supports "Agent Swarms" — teams of Claude instances collaborating in parallel. Docker partnership announced March 2026.</p>
+  <div class="grid-2">
+    <div><strong>Security:</strong> OS-level container isolation per session. "Isolation over defense" — hard limits at container layer. Provable, auditable security.</div>
+    <div><strong>Code Quality:</strong> 700 lines TypeScript. Tiny footprint. Container isolation compensates for minimal app-layer security. 62 contributors.</div>
+    <div><strong>Orchestration:</strong> Container-per-session, Agent Swarms (parallel Claude instances), Docker Sandbox integration, multi-channel, container lifecycle.</div>
+    <div><strong>Ecosystem:</strong> Focused: Claude SDK, Agent Swarms, Docker isolation, multi-channel, memory.</div>
+  </div>
+  <p class="pro"><strong>Pro:</strong> OS-level container isolation per session, Docker partnership, Agent Swarms</p>
+  <p class="con"><strong>Con:</strong> Requires Anthropic API key (Claude only), heavier than lightweight alternatives</p>
+  <p class="dim-label"><strong>Min Hardware:</strong> 2 CPU cores, 4 threads, 4 GB RAM, 5 GB storage</p>
+</div>
+
+<div class="agent-card">
+  <h3>NemoClaw <span class="score score-mid" style="margin-left:8px">6.2/10</span></h3>
+  <div class="agent-meta">
+    <span><strong>Language:</strong> Node.js + OpenShell</span>
+    <span><strong>Stars:</strong> 4.6K+</span>
+    <span><strong>License:</strong> NVIDIA</span>
+    <span><strong>Repo:</strong> github.com/NVIDIA/NemoClaw</span>
+  </div>
+  <p>NVIDIA enterprise security layer for OpenClaw. Announced at GTC 2026. Triple enforcement: Sandbox (Landlock + seccomp + network namespace), Policy Engine (filesystem/network/process rules), Privacy Router (inference routing + PII stripping). 85.6% PinchBench score.</p>
+  <div class="grid-2">
+    <div><strong>Security:</strong> Landlock + seccomp + network NS. Policy engine + PII router. Enterprise-grade by NVIDIA.</div>
+    <div><strong>Code Quality:</strong> Alpha stage. NVIDIA backing. "Expect rough edges." Not production-ready per NVIDIA's own documentation.</div>
+    <div><strong>Orchestration:</strong> Via OpenClaw Gateway (inherits full API), policy-filtered context, OpenShell health monitoring, privacy router.</div>
+    <div><strong>Ecosystem:</strong> Security stack: OpenShell sandbox, policy engine, privacy router, via OpenClaw ecosystem.</div>
+  </div>
+  <p class="pro"><strong>Pro:</strong> Triple enforcement (Landlock+seccomp+NS), PII router, NVIDIA backing, 85.6% PinchBench</p>
+  <p class="con"><strong>Con:</strong> Alpha/not production-ready, Linux only, missing fleet management, limited model support</p>
+  <p class="dim-label"><strong>Min Hardware:</strong> 4 CPU cores, 4 threads, 8 GB RAM, 5 GB storage</p>
+</div>
+
+<div class="agent-card">
+  <h3>Goose <span class="score score-mid" style="margin-left:8px">6.1/10</span></h3>
+  <div class="agent-meta">
+    <span><strong>Language:</strong> Rust + Python</span>
+    <span><strong>Stars:</strong> 29K+</span>
+    <span><strong>License:</strong> Apache 2.0</span>
+    <span><strong>Repo:</strong> github.com/block/goose</span>
+  </div>
+  <p>By Block (Square/Cash App/Afterpay). Extensible AI agent with CLI and Electron desktop interfaces. Connects to 3,000+ tools through MCP protocol. Automates workflows with "recipes." Model-agnostic. 400+ contributors. 60% of Block workforce uses it weekly.</p>
+  <div class="grid-2">
+    <div><strong>Security:</strong> No built-in sandbox. Red-teamed by Block security ("Operation Pale Fire"). Found and fixed prompt injection via invisible Unicode.</div>
+    <div><strong>Code Quality:</strong> Rust core, red-teamed by Block security team, 400+ contributors, mixed Rust+Python codebase.</div>
+    <div><strong>Orchestration:</strong> Extension protocol, CLI-focused (not API-first), recipes for workflows, MCP tools, no native sub-agents.</div>
+    <div><strong>Ecosystem:</strong> Extensive: 3K+ MCP tools, recipes, extensions, Electron desktop, plugin system, grant program.</div>
+  </div>
+  <p class="pro"><strong>Pro:</strong> 3K+ MCP tools, Block backing, 50-75% dev time savings reported, free, model-agnostic</p>
+  <p class="con"><strong>Con:</strong> No built-in sandbox, prompt injection found (red team), terminal-centric learning curve</p>
+  <p class="dim-label"><strong>Min Hardware:</strong> 4 CPU cores, 8 threads, 8 GB RAM, 2 GB storage</p>
+</div>
+
+<div class="agent-card">
+  <h3>OpenClaw <span class="score score-mid" style="margin-left:8px">6.0/10</span></h3>
+  <div class="agent-meta">
+    <span><strong>Language:</strong> Node.js</span>
+    <span><strong>Stars:</strong> 430K+</span>
+    <span><strong>License:</strong> MIT</span>
+    <span><strong>Repo:</strong> github.com/openclaw/openclaw</span>
+  </div>
+  <p>The original open-source personal AI assistant. Fastest-growing open-source project in history (220K stars in 84 days). 2M monthly active users, 27M web visits/month. Built-in HTTP Gateway API. Connects to WhatsApp, Telegram, Discord, Slack. Multi-provider: Anthropic, OpenAI, Ollama.</p>
+  <div class="grid-2">
+    <div><strong>Security:</strong> None built-in. No permission model, no code signing, full FS/shell/network access. 9 CVEs including CVSS 8.8 RCE (CVE-2026-25253). 341 malicious skills on ClawHub. 40K+ exposed instances.</div>
+    <div><strong>Code Quality:</strong> 430K lines. Security score 28/100. 111 red flags. $373K technical debt. Poor test coverage (526h remediation needed).</div>
+    <div><strong>Orchestration:</strong> Full REST+WS Gateway, session mgmt (thread modes), native sub-agents, agent teams with handoff protocols, cron, webhooks, task abort.</div>
+    <div><strong>Ecosystem:</strong> Massive: 10K+ skills, ClawHub marketplace, MCP (3K+), webhooks, cron, 5+ channels, REST+WS API.</div>
+  </div>
+  <p class="pro"><strong>Pro:</strong> Largest ecosystem (10K+ skills), most integrations, 2M active users, battle-tested</p>
+  <p class="con"><strong>Con:</strong> 9 CVEs incl. RCE, no sandbox, 341 malicious skills on ClawHub, credential leaks</p>
+  <p class="dim-label"><strong>Min Hardware:</strong> 2 CPU cores, 4 threads, 4 GB RAM, 2 GB storage</p>
+</div>
+
+<div class="agent-card">
+  <h3>PicoClaw <span class="score score-low" style="margin-left:8px">5.7/10</span></h3>
+  <div class="agent-meta">
+    <span><strong>Language:</strong> Go</span>
+    <span><strong>Stars:</strong> 25K+</span>
+    <span><strong>License:</strong> MIT</span>
+    <span><strong>Repo:</strong> github.com/sipeed/picoclaw</span>
+  </div>
+  <p>Ultra-lightweight Go agent by Sipeed. Under 10MB RAM, boots in 1 second. Runs on $5/$10 hardware. 99% less memory than OpenClaw. Rebuilt from the ground up in Go through a "self-bootstrapping" process. Native MCP integration, vision pipeline for multimodal LLMs.</p>
+  <div class="grid-2">
+    <div><strong>Security:</strong> Cron security gating. Pre-v1.0 — "unresolved security issues." Not for production-critical workloads yet.</div>
+    <div><strong>Code Quality:</strong> Go, lowest issue ratio (0.013), but 95% AI-generated code. Pre-v1.0. 187 contributors.</div>
+    <div><strong>Orchestration:</strong> Gateway API (OpenClaw-like), basic sessions, spawn_status for sub-agents, cron, MCP.</div>
+    <div><strong>Ecosystem:</strong> Growing: MCP, vision pipeline, sub-agents, cron, system tray UI, multimodal.</div>
+  </div>
+  <p class="pro"><strong>Pro:</strong> 10MB RAM, boots in 1s, runs on $5 hardware, single binary, vision pipeline</p>
+  <p class="con"><strong>Con:</strong> Pre-v1.0 security caveats, limited complex workflows, basic state management</p>
+  <p class="dim-label"><strong>Min Hardware:</strong> 1 CPU core, 1 thread, 10 MB RAM, 50 MB storage</p>
+</div>
+
+<div class="agent-card">
+  <h3>NanoBot <span class="score score-low" style="margin-left:8px">5.4/10</span></h3>
+  <div class="agent-meta">
+    <span><strong>Language:</strong> Python</span>
+    <span><strong>Stars:</strong> 26.8K+</span>
+    <span><strong>License:</strong> Open Source</span>
+    <span><strong>Repo:</strong> github.com/HKUDS/nanobot</span>
+  </div>
+  <p>Ultra-lightweight AI assistant from HKU Data Intelligence Lab. ~4,000 lines of Python — 99% smaller than OpenClaw. Gateway mode with HTTP API. Supports subagent spawning for parallel tasks. "Auditable in an afternoon."</p>
+  <div class="grid-2">
+    <div><strong>Security:</strong> Minimal sandboxing. Small codebase (4K lines) naturally limits attack surface. Relies on LLM provider security.</div>
+    <div><strong>Code Quality:</strong> 4K lines Python, auditable in an afternoon, minimal tests, 215 contributors.</div>
+    <div><strong>Orchestration:</strong> Gateway HTTP API, basic sessions, native subagent spawning, multi-provider, channel adapters.</div>
+    <div><strong>Ecosystem:</strong> Minimal: Gateway API, subagent spawning, multi-provider, channel adapters.</div>
+  </div>
+  <p class="pro"><strong>Pro:</strong> Only 4K lines, easiest to understand/hack, multi-provider, subagent spawning</p>
+  <p class="con"><strong>Con:</strong> Minimal sandbox, small ecosystem, limited advanced features compared to OpenClaw</p>
+  <p class="dim-label"><strong>Min Hardware:</strong> 1 CPU core, 2 threads, 512 MB RAM, 200 MB storage</p>
+</div>
+
+<h2 class="page-break">Score Methodology</h2>
+
+<table class="methodology-table">
+<thead>
+<tr><th>Dimension</th><th>Weight</th><th>What It Measures</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Security</strong></td><td>30%</td><td>Sandboxing approach, known CVEs, credential handling, audit results, zero-trust architecture</td></tr>
+<tr><td><strong>Code Quality</strong></td><td>20%</td><td>Language memory safety, test coverage, technical debt, code audits, unsafe code blocks</td></tr>
+<tr><td><strong>Orchestration</strong></td><td>20%</td><td>API programmability, session management, sub-agent support, task control, multi-agent coordination</td></tr>
+<tr><td><strong>Ecosystem</strong></td><td>15%</td><td>Tools, plugins, skills, MCP integrations, channels, protocols, marketplace</td></tr>
+<tr><td><strong>Popularity</strong></td><td>10%</td><td>GitHub stars, community size, media coverage, corporate backing, enterprise adoption</td></tr>
+<tr><td><strong>Hardware</strong></td><td>5%</td><td>Resource efficiency — inverse of minimum RAM/CPU requirements</td></tr>
+</tbody>
+</table>
+
+<p>Security is weighted highest (30%) because agents handle sensitive data, credentials, and have system-level access. Popularity is weighted lowest (10%) because widespread adoption does not equal quality — OpenClaw is the most popular agent but has the worst security record.</p>
+
+<h2>Sources</h2>
+
+<h3>Security Audits & Research</h3>
+<ul class="source-list">
+  <li><a href="https://www.microsoft.com/en-us/security/blog/2026/02/19/running-openclaw-safely-identity-isolation-runtime-risk/">Microsoft Security Blog: Running OpenClaw Safely</a> — Identity, isolation, runtime risk analysis</li>
+  <li><a href="https://blogs.cisco.com/ai/personal-ai-agents-like-openclaw-are-a-security-nightmare">Cisco: Personal AI Agents Are a Security Nightmare</a> — Enterprise security assessment</li>
+  <li><a href="https://www.kaspersky.com/blog/moltbot-enterprise-risk-management/55317/">Kaspersky: Key OpenClaw Risks</a> — Credential exposure and infostealer targeting</li>
+  <li><a href="https://www.theregister.com/2026/01/12/block_ai_agent_goose/">Block Red Team: Operation Pale Fire</a> — Goose prompt injection via invisible Unicode</li>
+  <li><a href="https://www.bitsight.com/blog/openclaw-ai-security-risks-exposed-instances">Bitsight: OpenClaw Security Risks</a> — 40,214 exposed instances, 35.4% vulnerable</li>
+  <li><a href="https://awesomeagents.ai/reviews/review-ironclaw/">IronClaw Security Review</a> — Wasm sandbox architecture and seL4-inspired capability model</li>
+</ul>
+
+<h3>Code Quality & Architecture</h3>
+<ul class="source-list">
+  <li><a href="https://campac.medium.com/openclaw-audit-review-a-modern-core-with-hidden-debt-74056e99878e">OpenClaw Audit: Modern Core with Hidden Debt</a> — $373K tech debt, security 28/100, 111 red flags</li>
+  <li><a href="https://shelldex.com/projects/moltis/">Moltis: Zero Unsafe, Full Audit Trail</a> — 150K Rust lines, 2,300+ tests, zero unsafe</li>
+  <li><a href="https://medium.com/@everettjf/rust-agent-runtime-showdown-microclaw-vs-zeroclaw-vs-moltis-df1ecb85c676">Rust Agent Runtime Showdown</a> — Moltis vs ZeroClaw architecture comparison</li>
+  <li><a href="https://arxiv.org/html/2511.03690v1">OpenHands Software Agent SDK</a> — Event-sourced architecture academic paper</li>
+  <li><a href="https://ossinsight.io/blog/the-openclaw-forks-wave-2026">116K Stars in 8 Weeks: Four Teams Rewrote OpenClaw</a> — Codebase size and contributor comparisons</li>
+</ul>
+
+<h3>Community & Popularity</h3>
+<ul class="source-list">
+  <li><a href="https://www.gradually.ai/en/openclaw-statistics/">OpenClaw Statistics 2026</a> — 430K stars, 2M MAU, 27M web visits, 900+ contributors</li>
+  <li><a href="https://aitoolanalysis.com/goose-ai-review/">Goose AI Review 2026</a> — 29K stars, 400+ contributors, Block backing</li>
+  <li><a href="https://techcrunch.com/2026/03/13/the-wild-six-weeks-for-nanoclaws-creator-that-led-to-a-deal-with-docker/">NanoClaw + Docker Partnership (TechCrunch)</a> — Docker deal, community growth</li>
+  <li><a href="https://aiagentslist.com/agents/openhands">OpenHands Review 2026</a> — 65K stars, $18.8M funding, enterprise adoption</li>
+  <li><a href="https://github.com/sipeed/picoclaw">PicoClaw GitHub</a> — 25K stars, edge/IoT community</li>
+</ul>
+
+<h3>Comparisons & Analysis</h3>
+<ul class="source-list">
+  <li><a href="https://lushbinary.com/blog/zeroclaw-openclaw-personal-ai-agents-compared-2026/">Full 2026 Comparison: ZeroClaw vs OpenClaw vs NanoClaw vs NanoBot vs PicoClaw vs IronClaw</a></li>
+  <li><a href="https://www.aimagicx.com/blog/openclaw-alternatives-comparison-2026">OpenClaw Alternatives Compared (AI Magicx)</a></li>
+  <li><a href="https://techcrunch.com/2026/03/16/nvidias-version-of-openclaw-could-solve-its-biggest-problem-security/">NemoClaw at GTC 2026 (TechCrunch)</a></li>
+  <li><a href="https://evoailabs.medium.com/agent-wars-2026-openclaw-vs-memu-vs-nanobot-which-local-ai-should-you-run-8ef0869b2e0c">Agent Wars 2026</a></li>
+  <li><a href="https://superframeworks.com/articles/best-openclaw-alternatives">Security-First Guide to Self-Hosted AI Assistants</a></li>
+</ul>
+
+<h3>Benchmarks</h3>
+<ul class="source-list">
+  <li><a href="https://www.vals.ai/benchmarks/swebench">SWE-bench Verified</a> — Software engineering benchmark</li>
+  <li><a href="https://www.tbench.ai/">Terminal-Bench</a> — Terminal agent benchmark</li>
+  <li><a href="https://pinchbench.com/">PinchBench</a> — OpenClaw agent performance benchmark</li>
+</ul>
+
+<h3>Forums & Community Discussions</h3>
+<ul class="source-list">
+  <li><a href="https://news.ycombinator.com/item?id=47368703">Hacker News: NanoClaw + Docker Discussion</a></li>
+  <li><a href="https://news.ycombinator.com/item?id=46993587">Hacker News: Moltis Show HN Launch</a></li>
+  <li><a href="https://dev.to/0xkoji/a-quick-look-at-claw-family-28e3">DEV Community: Claw Family Overview</a></li>
+  <li><a href="https://www.producthunt.com/products/ironclaw">Product Hunt: IronClaw Launch</a></li>
+</ul>
+
+<div class="footer">
+  AI Agent Framework Comparison 2026 | By Alejandro Alvarez | March 30, 2026
+</div>
+
+</body>
+</html>

@@ -1,10 +1,10 @@
 # Most Popular and Innovative AI Agents Compared (2026)
 
-An independent analysis of the most popular and innovative open-source AI agents, scored across 6 weighted dimensions using data from 30+ independent sources including security audits (Microsoft, Cisco, Kaspersky), code reviews, community metrics, and architectural assessments.
+An independent analysis of the 11 most popular and innovative open-source AI agents, scored across 6 weighted dimensions using data from 30+ independent sources including security audits (Microsoft, Cisco, Kaspersky), code reviews, community metrics, and architectural assessments.
 
 ## Why This Study
 
-The AI agent ecosystem exploded in early 2026. OpenClaw hit 430K GitHub stars in under 90 days, but security researchers at Microsoft, Cisco, and Kaspersky flagged critical vulnerabilities. Dozens of alternatives emerged. This study cuts through the hype and evaluates what actually matters: security, code quality, and controllability — not just GitHub stars.
+The AI agent ecosystem exploded in early 2026. OpenClaw hit 430K GitHub stars in under 90 days, but security researchers at Microsoft, Cisco, and Kaspersky flagged critical vulnerabilities. Dozens of alternatives emerged — from AutoGPT's pioneering autonomous loops (183K stars) to Hermes Agent's self-improving skill system by Nous Research. This study cuts through the hype and evaluates what actually matters: security, code quality, and controllability — not just GitHub stars.
 
 ## Rankings
 
@@ -17,6 +17,8 @@ The AI agent ecosystem exploded in early 2026. OpenClaw hit 430K GitHub stars in
 | **6.2** | NemoClaw | Node.js | 9/10 Very High | 5/10 Fair | NVIDIA triple enforcement, PII router |
 | **6.1** | Goose | Rust+Python | 5/10 Medium | 7/10 Good | 3K+ MCP tools, Block backing |
 | **6.0** | OpenClaw | Node.js | 2/10 Low | 4/10 Poor | Largest ecosystem (10K+ skills), 430K stars |
+| **6.0** | AutoGPT | Python | 5/10 Medium | 5/10 Fair | Pioneer autonomous AI, 183K stars, marketplace |
+| **6.2** | Hermes Agent | Python | 5/10 Medium | 7/10 Good | Self-improving skills, persistent memory, 3,289 tests |
 | **5.7** | PicoClaw | Go | 5/10 Medium | 6/10 Fair | 10MB RAM, runs on $5 hardware |
 | **5.4** | NanoBot | Python | 5/10 Medium | 5/10 Fair | 4K lines, easiest to understand |
 
@@ -44,11 +46,11 @@ The full document includes detailed agent profiles, architecture breakdowns, pro
 
 ## Sources (30+)
 
-**Security Audits:** Microsoft Security Blog, Cisco, Kaspersky, Bitsight, Block Red Team (Operation Pale Fire), Sangfor, IronClaw architecture review
+**Security Audits:** Microsoft Security Blog, Cisco, Kaspersky, Bitsight, Block Red Team (Operation Pale Fire), Sangfor, IronClaw architecture review, Positive Security (AutoGPT Docker Escape)
 
-**Code Quality:** OpenClaw audit ($373K tech debt), Moltis zero-unsafe review, OpenHands event-sourced architecture paper, OSS Insight codebase analysis
+**Code Quality:** OpenClaw audit ($373K tech debt), Moltis zero-unsafe review, OpenHands event-sourced architecture paper, OSS Insight codebase analysis, AutoGPT docs, Hermes Agent v0.5.0 (3,289 tests)
 
-**Community & Media:** TechCrunch (NanoClaw/Docker deal, NemoClaw GTC), OpenClaw statistics (2M MAU), Goose AI review (Block internal data)
+**Community & Media:** TechCrunch (NanoClaw/Docker deal, NemoClaw GTC), OpenClaw statistics (2M MAU), Goose AI review (Block internal data), AutoGPT GitHub (183K stars), Hermes Agent launch (MarkTechPost)
 
 **Benchmarks:** SWE-bench Verified, Terminal-Bench, PinchBench
 

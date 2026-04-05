@@ -51,12 +51,12 @@
 
 <h1>Most Popular and Innovative AI Agents Compared (2026)</h1>
 <p class="subtitle">An independent analysis of the most popular and innovative open-source AI agents for self-hosted deployment</p>
-<p class="date">March 2026 | By Alejandro Alvarez</p>
+<p class="date">April 2026 | By Alejandro Alvarez</p>
 
 <h2>Executive Summary</h2>
-<p>The AI agent ecosystem exploded in early 2026, with OpenClaw reaching 430K GitHub stars in under 90 days and spawning dozens of alternatives. This study evaluates the most popular and innovative open-source AI agent frameworks through a structured analysis of security audits, code reviews, community data, and architectural assessments from over 30 independent sources including Microsoft, Cisco, Kaspersky, NVIDIA, and academic research.</p>
-<p>Each agent is scored across 6 weighted dimensions: <strong>Security (30%)</strong>, <strong>Code Quality (20%)</strong>, <strong>Orchestration (20%)</strong>, <strong>Ecosystem (15%)</strong>, <strong>Popularity (10%)</strong>, and <strong>Hardware Efficiency (5%)</strong>. Security is weighted highest because these agents have system-level access, handle credentials, and execute arbitrary code. The study intentionally weights popularity low (10%) to avoid conflating adoption with quality &mdash; the most popular agent (OpenClaw, 430K stars) ranks 7th due to 9 CVEs and no built-in sandbox.</p>
-<p><strong>Key findings:</strong> Rust-based agents (IronClaw, Moltis) lead in security and code quality. OpenHands leads in orchestration API maturity. OpenClaw has the richest ecosystem but the worst security posture. PicoClaw is the most hardware-efficient (10MB RAM) but pre-v1.0. All scores, data points, and claims are traceable to the sources listed at the end of this document.</p>
+<p>The AI agent ecosystem exploded in early 2026, with OpenClaw reaching 430K GitHub stars in under 90 days and spawning dozens of alternatives. This study evaluates 11 of the most popular and innovative open-source AI agent frameworks through a structured analysis of security audits, code reviews, community data, and architectural assessments from over 30 independent sources including Microsoft, Cisco, Kaspersky, NVIDIA, and academic research.</p>
+<p>Each agent is scored across 6 weighted dimensions: <strong>Security (30%)</strong>, <strong>Code Quality (20%)</strong>, <strong>Orchestration (20%)</strong>, <strong>Ecosystem (15%)</strong>, <strong>Popularity (10%)</strong>, and <strong>Hardware Efficiency (5%)</strong>. Security is weighted highest because these agents have system-level access, handle credentials, and execute arbitrary code. The study intentionally weights popularity low (10%) to avoid conflating adoption with quality &mdash; the most popular agent (OpenClaw, 430K stars) ranks 9th due to 9 CVEs and no built-in sandbox.</p>
+<p><strong>Key findings:</strong> Rust-based agents (IronClaw, Moltis) lead in security and code quality. OpenHands leads in orchestration API maturity. OpenClaw has the richest ecosystem but the worst security posture. PicoClaw is the most hardware-efficient (10MB RAM) but pre-v1.0. AutoGPT (183K stars) pioneered autonomous AI agents but suffers from high resource consumption and loop-prone execution. Hermes Agent by Nous Research introduces self-improving skills and persistent memory in a lightweight package. All scores, data points, and claims are traceable to the sources listed at the end of this document.</p>
 
 <h2>Comparison Table</h2>
 <table>
@@ -190,6 +190,38 @@
   <td class="mono">2C/4T, 4GB, 2GB</td>
   <td class="mono">alpine/openclaw</td>
   <td class="mono">18789</td>
+</tr>
+<tr>
+  <td><span class="score score-mid">6.0</span></td>
+  <td><strong>AutoGPT</strong></td>
+  <td>Python</td>
+  <td>183K+</td>
+  <td>MIT</td>
+  <td><span class="badge badge-amber">5/10 Medium</span></td>
+  <td><span class="badge badge-amber">5/10 Fair</span></td>
+  <td><span class="badge badge-blue">7/10 Good</span></td>
+  <td><span class="badge badge-blue">7/10</span></td>
+  <td><span class="badge badge-green">9/10 Very High</span></td>
+  <td><span class="badge badge-amber">3/10 Heavy</span></td>
+  <td class="mono">4C/8T, 8GB, 10GB</td>
+  <td class="mono">significantgravitas/auto-gpt</td>
+  <td class="mono">8006</td>
+</tr>
+<tr>
+  <td><span class="score score-mid">6.2</span></td>
+  <td><strong>Hermes Agent</strong></td>
+  <td>Python</td>
+  <td>8.8K+</td>
+  <td>MIT</td>
+  <td><span class="badge badge-amber">5/10 Medium</span></td>
+  <td><span class="badge badge-blue">7/10 Good</span></td>
+  <td><span class="badge badge-blue">7/10 Good</span></td>
+  <td><span class="badge badge-blue">7/10</span></td>
+  <td><span class="badge badge-amber">4/10 Growing</span></td>
+  <td><span class="badge badge-blue">6/10 Light</span></td>
+  <td class="mono">2C/4T, 2GB, 1GB</td>
+  <td class="mono">nousresearch/hermes-agent</td>
+  <td class="mono">8787</td>
 </tr>
 <tr>
   <td><span class="score score-low">5.7</span></td>
@@ -369,6 +401,46 @@
 </div>
 
 <div class="agent-card">
+  <h3>AutoGPT <span class="score score-mid" style="margin-left:8px">6.0/10</span></h3>
+  <div class="agent-meta">
+    <span><strong>Language:</strong> Python</span>
+    <span><strong>Stars:</strong> 183K+</span>
+    <span><strong>License:</strong> MIT</span>
+    <span><strong>Repo:</strong> github.com/Significant-Gravitas/AutoGPT</span>
+  </div>
+  <p>Pioneer of autonomous AI agents (2023). Goal-oriented execution loops — give it a goal, it plans, executes, observes, adjusts. Evolved into a full platform with low-code workflow builder, agent marketplace, and MCP support. Multi-container architecture (PostgreSQL + Redis + RabbitMQ).</p>
+  <div class="grid-2">
+    <div><strong>Security:</strong> Docker-based sandbox. Historical docker escape CVE + path traversal vulnerability. Improved but not zero-trust.</div>
+    <div><strong>Code Quality:</strong> Large Python codebase, complex multi-container architecture, prone to loops/hallucination, historical docker escape CVE.</div>
+    <div><strong>Orchestration:</strong> REST API (port 8006), WebSocket (port 8001), goal-oriented autonomous loops, persistent agents, low-code workflow builder, marketplace.</div>
+    <div><strong>Ecosystem:</strong> Agent marketplace, MCP support (added 2026), plugin system, Claude Agent SDK integration, 50K+ Discord members.</div>
+  </div>
+  <p class="pro"><strong>Pro:</strong> Pioneer of autonomous AI, 183K stars, marketplace, low-code builder, Docker sandbox, persistent agents</p>
+  <p class="con"><strong>Con:</strong> High token consumption, prone to infinite loops, $50+ API costs per task, complex multi-container setup</p>
+  <p class="dim-label"><strong>Min Hardware:</strong> 4 CPU cores, 8 threads, 8 GB RAM, 10 GB storage</p>
+</div>
+
+<div class="agent-card">
+  <h3>Hermes Agent <span class="score score-mid" style="margin-left:8px">6.2/10</span></h3>
+  <div class="agent-meta">
+    <span><strong>Language:</strong> Python</span>
+    <span><strong>Stars:</strong> 8.8K+</span>
+    <span><strong>License:</strong> MIT</span>
+    <span><strong>Repo:</strong> github.com/NousResearch/hermes-agent</span>
+  </div>
+  <p>The self-improving agent by Nous Research (Feb 2026). The only agent with a built-in learning loop — creates reusable skills from experience, improves during use, builds a deepening model of who you are across sessions. Multi-level memory (session, persistent, skill). OpenAI-compatible API. 6 deployment targets (local, Docker, SSH, Daytona, Singularity, Modal).</p>
+  <div class="grid-2">
+    <div><strong>Security:</strong> Dangerous command detection, path traversal fixes, supply chain audit, container hardening (read-only root, dropped capabilities, namespace isolation).</div>
+    <div><strong>Code Quality:</strong> 3,289 tests, supply chain audit, 50+ security fixes in v0.5.0, active release cadence. Python.</div>
+    <div><strong>Orchestration:</strong> OpenAI-compatible API server, 6 terminal backends, persistent agents, autonomous skill system, MCP support, multi-channel gateway (Telegram, Discord, Slack, WhatsApp, Signal, CLI).</div>
+    <div><strong>Ecosystem:</strong> 40+ built-in tools, MCP, agentskills.io standard, 200+ models via OpenRouter, plugin architecture, Vercel AI Gateway.</div>
+  </div>
+  <p class="pro"><strong>Pro:</strong> Self-improving skills, persistent memory, 3,289 tests, 200+ models, runs on $5 VPS, 6 deploy targets</p>
+  <p class="con"><strong>Con:</strong> Early-stage (Feb 2026), small community (8.8K stars), documentation gaps, reliability varies by model backend</p>
+  <p class="dim-label"><strong>Min Hardware:</strong> 2 CPU cores, 4 threads, 2 GB RAM, 1 GB storage</p>
+</div>
+
+<div class="agent-card">
   <h3>PicoClaw <span class="score score-low" style="margin-left:8px">5.7/10</span></h3>
   <div class="agent-meta">
     <span><strong>Language:</strong> Go</span>
@@ -426,10 +498,10 @@
 
 <p><strong>Why these weights?</strong> Security receives the highest weight (30%) because AI agents have system-level access &mdash; they execute shell commands, read files, handle API keys, and interact with external services. A compromised agent is a compromised machine. Code Quality and Orchestration each receive 20% because they directly determine reliability and controllability. Ecosystem matters (15%) but is secondary to safety. Popularity is deliberately low (10%) to prevent conflating adoption with quality &mdash; OpenClaw demonstrates this clearly: 430K stars but 9 CVEs and no sandbox. Hardware efficiency is minimal (5%) because most deployments have adequate resources; it only matters for edge/IoT use cases.</p>
 
-<p><strong>Limitations:</strong> This analysis reflects the state of these projects as of March 2026. Open-source projects evolve rapidly. Security scores may change as vulnerabilities are discovered or fixed. Orchestration and ecosystem scores are based on documented features, not exhaustive testing. Performance benchmarks (SWE-bench, PinchBench) measure the underlying LLM model more than the agent framework itself, which is why we excluded them from the scoring formula. All data is sourced from public information; no private audits were conducted.</p>
+<p><strong>Limitations:</strong> This analysis reflects the state of these projects as of April 2026. Open-source projects evolve rapidly. Security scores may change as vulnerabilities are discovered or fixed. Orchestration and ecosystem scores are based on documented features, not exhaustive testing. Performance benchmarks (SWE-bench, PinchBench) measure the underlying LLM model more than the agent framework itself, which is why we excluded them from the scoring formula. All data is sourced from public information; no private audits were conducted.</p>
 
 <h2>Sources &amp; References</h2>
-<p style="font-size:8.5pt;color:#64748b;margin-bottom:12px;">All scores and claims in this document are traceable to the following sources. Links verified as of March 2026.</p>
+<p style="font-size:8.5pt;color:#64748b;margin-bottom:12px;">All scores and claims in this document are traceable to the following sources. Links verified as of April 2026.</p>
 
 <h3>Security Audits & Research</h3>
 <ul class="source-list">
@@ -439,6 +511,7 @@
   <li><a href="https://www.theregister.com/2026/01/12/block_ai_agent_goose/">Block Red Team: Operation Pale Fire</a> — Goose prompt injection via invisible Unicode</li>
   <li><a href="https://www.bitsight.com/blog/openclaw-ai-security-risks-exposed-instances">Bitsight: OpenClaw Security Risks</a> — 40,214 exposed instances, 35.4% vulnerable</li>
   <li><a href="https://awesomeagents.ai/reviews/review-ironclaw/">IronClaw Security Review</a> — Wasm sandbox architecture and seL4-inspired capability model</li>
+  <li><a href="https://positive.security/blog/auto-gpt-rce">Positive Security: AutoGPT Docker Escape</a> — Historical RCE via Docker container escape</li>
 </ul>
 
 <h3>Code Quality & Architecture</h3>
@@ -448,6 +521,8 @@
   <li><a href="https://medium.com/@everettjf/rust-agent-runtime-showdown-microclaw-vs-zeroclaw-vs-moltis-df1ecb85c676">Rust Agent Runtime Showdown</a> — Moltis vs ZeroClaw architecture comparison</li>
   <li><a href="https://arxiv.org/html/2511.03690v1">OpenHands Software Agent SDK</a> — Event-sourced architecture academic paper</li>
   <li><a href="https://ossinsight.io/blog/the-openclaw-forks-wave-2026">116K Stars in 8 Weeks: Four Teams Rewrote OpenClaw</a> — Codebase size and contributor comparisons</li>
+  <li><a href="https://docs.agpt.co/">AutoGPT Documentation</a> — Platform architecture and setup</li>
+  <li><a href="https://github.com/NousResearch/hermes-agent/releases/tag/v2026.3.28">Hermes Agent: 3,289 Tests and Supply Chain Audit</a> — v0.5.0 security fixes</li>
 </ul>
 
 <h3>Community & Popularity</h3>
@@ -457,6 +532,8 @@
   <li><a href="https://techcrunch.com/2026/03/13/the-wild-six-weeks-for-nanoclaws-creator-that-led-to-a-deal-with-docker/">NanoClaw + Docker Partnership (TechCrunch)</a> — Docker deal, community growth</li>
   <li><a href="https://aiagentslist.com/agents/openhands">OpenHands Review 2026</a> — 65K stars, $18.8M funding, enterprise adoption</li>
   <li><a href="https://github.com/sipeed/picoclaw">PicoClaw GitHub</a> — 25K stars, edge/IoT community</li>
+  <li><a href="https://github.com/Significant-Gravitas/AutoGPT">AutoGPT GitHub</a> — 183K stars, 50K+ Discord</li>
+  <li><a href="https://www.marktechpost.com/2026/02/26/nous-research-releases-hermes-agent-to-fix-ai-forgetfulness-with-multi-level-memory-and-dedicated-remote-terminal-access-support/">Hermes Agent Launch (MarkTechPost)</a> — Nous Research launch coverage</li>
 </ul>
 
 <h3>Comparisons & Analysis</h3>
@@ -466,6 +543,7 @@
   <li><a href="https://techcrunch.com/2026/03/16/nvidias-version-of-openclaw-could-solve-its-biggest-problem-security/">NemoClaw at GTC 2026 (TechCrunch)</a></li>
   <li><a href="https://evoailabs.medium.com/agent-wars-2026-openclaw-vs-memu-vs-nanobot-which-local-ai-should-you-run-8ef0869b2e0c">Agent Wars 2026</a></li>
   <li><a href="https://superframeworks.com/articles/best-openclaw-alternatives">Security-First Guide to Self-Hosted AI Assistants</a></li>
+  <li><a href="https://medium.com/neuralnotions/hermes-vs-openclaw-the-first-real-rival-in-the-autonomous-ai-agent-race-c2e0f486e52c">Hermes vs OpenClaw: The First Real Rival</a></li>
 </ul>
 
 <h3>Benchmarks</h3>
@@ -481,10 +559,11 @@
   <li><a href="https://news.ycombinator.com/item?id=46993587">Hacker News: Moltis Show HN Launch</a></li>
   <li><a href="https://dev.to/0xkoji/a-quick-look-at-claw-family-28e3">DEV Community: Claw Family Overview</a></li>
   <li><a href="https://www.producthunt.com/products/ironclaw">Product Hunt: IronClaw Launch</a></li>
+  <li><a href="https://www.linkedin.com/posts/shubhamsaboo_this-open-source-ai-agent-actually-remembers-activity-7433715256926879744-e483">Hermes Agent LinkedIn Announcement</a> — Nous Research launch</li>
 </ul>
 
 <div class="footer">
-  Most Popular and Innovative AI Agents Compared (2026) | By Alejandro Alvarez | March 2026
+  Most Popular and Innovative AI Agents Compared (2026) | By Alejandro Alvarez | April 2026
 </div>
 
 </body>
